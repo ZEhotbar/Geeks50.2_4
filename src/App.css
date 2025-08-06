@@ -1,0 +1,26 @@
+html {
+  background-color: rgb(193, 221, 246);
+  font-size: 20px;
+  font-family: serif;
+  color: rgb(221, 255, 244);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.CardUser {
+  flex-direction: column;
+  background-color: #556464;
+  width: 10vw;
+  height: auto;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 10px;
+} 

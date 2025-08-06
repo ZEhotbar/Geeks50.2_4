@@ -1,0 +1,9 @@
+{
+    "result": [
+    { "name": "Vasia", "age": 28, "city": "Osh", "active": true },
+    { "name": "Anton", "age": 34, "city": "Moscow", "active": false },
+    { "name": "Nustya", "age": 23, "city": "Vena", "active": true },
+    { "name": "Vika", "age": 30, "city": "Almata", "active": false},
+    { "name":"Petya", "age": 78, "city": "Chicago", "active": true}
+    ]
+}
