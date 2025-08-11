@@ -1,0 +1,17 @@
+html {
+  background-color: rgb(68, 21, 21);
+  color: rgb(184, 99, 99);
+  font-size: 20px;
+  font-family: serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+}
