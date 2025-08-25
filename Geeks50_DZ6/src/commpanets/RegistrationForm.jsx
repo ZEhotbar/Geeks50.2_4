@@ -50,7 +50,6 @@ function RegistrationForm() {
         name: "",
         email: "",
         password: "",
-        confirmPassword: "",
       });
       setErrors({});
     }
@@ -97,18 +96,6 @@ function RegistrationForm() {
           onChange={(e) => handleChange("password", e.target.value)}
         />
         {errors.password && <p style={{ color: "red" }}>{errors.password}</p>}
-      </div>
-
-      <div>
-        <input
-          type="password"
-          placeholder="Подтверждение пароля"
-          value={formData.confirmPassword}
-          onChange={(e) => handleChange("confirmPassword", e.target.value)}
-        />
-        {errors.confirmPassword && (
-          <p style={{ color: "red" }}>{errors.confirmPassword}</p>
-        )}
       </div>
 
       <button type="submit">Зарегистрироваться</button>
