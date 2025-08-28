@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 export default function App() {
-  const [posts, setPosts] = useState([]);   // список постов
-  const [title, setTitle] = useState("");   // заголовок формы
-  const [body, setBody] = useState("");     // текст формы
-  const [loading, setLoading] = useState(false); // индикатор загрузки
-  const [message, setMessage] = useState("");    // сообщение об успехе/ошибке
+  const [posts, setPosts] = useState([]);   
+  const [title, setTitle] = useState("");   
+  const [body, setBody] = useState("");     
+  const [loading, setLoading] = useState(false); 
+  const [message, setMessage] = useState("");    
 
-  // Загружаем посты при старте
+
   useEffect(() => {
     const fetchPosts = async () => {
       try {
@@ -21,7 +21,7 @@ export default function App() {
     fetchPosts();
   }, []);
 
-  // Отправка нового поста
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -40,7 +40,7 @@ export default function App() {
         userId: 1,
       });
 
-      // добавляем новый пост в начало списка
+
       setPosts((prev) => [response.data, ...prev]);
 
       setMessage("Пост успешно добавлен!");
@@ -58,7 +58,7 @@ export default function App() {
     <div style={{ maxWidth: "600px", margin: "20px auto", fontFamily: "Arial" }}>
       <h1>Список постов</h1>
 
-      {/* Форма добавления */}
+      {}
       <form onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
         <input
           type="text"
@@ -82,10 +82,10 @@ export default function App() {
         </button>
       </form>
 
-      {/* Сообщение */}
+      {}
       {message && <p style={{ color: message.includes("Ошибка") ? "red" : "green" }}>{message}</p>}
 
-      {/* Список постов */}
+      {}
       {posts.map((post) => (
         <div
           key={post.id}
